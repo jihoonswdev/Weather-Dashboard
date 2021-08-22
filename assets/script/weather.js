@@ -110,8 +110,6 @@ var display5day = function (weather) {
     forecastDate.textContent = moment
       .unix(dailyForecast.dt)
       .format("MMM D, YYYY");
-    forecastDate.classList = "card-header text-center";
-    forecastEl.appendChild(forecastDate);
 
     forecastTempEl.textContent = dailyForecast.main.temp + " °F";
     forecastHumEl.textContent = dailyForecast.main.humidity + "  %";
