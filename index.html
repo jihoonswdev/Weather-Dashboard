@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header class="bg-dark text-white text-center p-2">
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class='container'>
+      <div id='form-row' class='row justify-content-between'>
+        <form id="city-search-form" class="border p-10">
+          <h3>Search for a City</h3>
+          <input id="city" type="text" class="form-input" placeholder="Enter city here!"/>
+          <button class="btn btn-primary" type="submit" id="searchButton" >Search</button>
+        </form>
+      </div>
+    
+        <section id="second-form"> 
+          <div class="col-10 col-md-20">
+            <div class="row border selected-city" id="firstForecast">
+              <div class="col-19">
+                <h2 id="searched-city"></h2>
+                <div id="current-weather-container"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <br>
+    </div>
+         <section id="third-form" class="col-md-10">
+          <div class="row border" id="five-day-forecast">
+            <h2 class="col-12" id="forecast"></h2>
+            <div class="d-flex" id="fiveday-container"></div>
+          </div>
+        </section>
+    
+      
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="./assets/script/weather.js"></script>
+  </body>
+</html>
